@@ -1,0 +1,707 @@
+{
+  "api": {
+    "name": "IntercomPlugin",
+    "slug": "intercomplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "initialize",
+        "signature": "(config: IntercomSettings) => void",
+        "parameters": [
+          {
+            "name": "config",
+            "docs": "",
+            "type": "IntercomSettings"
+          }
+        ],
+        "returns": "void",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "IntercomSettings"
+        ],
+        "slug": "initialize"
+      },
+      {
+        "name": "loginIdentifiedUser",
+        "signature": "(identity: IntercomIdentity) => Promise<void>",
+        "parameters": [
+          {
+            "name": "identity",
+            "docs": "",
+            "type": "IntercomIdentity"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "IntercomIdentity"
+        ],
+        "slug": "loginidentifieduser"
+      },
+      {
+        "name": "loginUnidentifiedUser",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "loginunidentifieduser"
+      },
+      {
+        "name": "updateUser",
+        "signature": "(user: IntercomUser) => Promise<void>",
+        "parameters": [
+          {
+            "name": "user",
+            "docs": "",
+            "type": "IntercomUser"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "IntercomUser"
+        ],
+        "slug": "updateuser"
+      },
+      {
+        "name": "logout",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "logout"
+      },
+      {
+        "name": "logEvent",
+        "signature": "(event: IntercomEvent) => Promise<void>",
+        "parameters": [
+          {
+            "name": "event",
+            "docs": "",
+            "type": "IntercomEvent"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "IntercomEvent"
+        ],
+        "slug": "logevent"
+      },
+      {
+        "name": "displayMessenger",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "displaymessenger"
+      },
+      {
+        "name": "displayMessageComposer",
+        "signature": "(message: IntercomMessage) => Promise<void>",
+        "parameters": [
+          {
+            "name": "message",
+            "docs": "",
+            "type": "IntercomMessage"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "IntercomMessage"
+        ],
+        "slug": "displaymessagecomposer"
+      },
+      {
+        "name": "displayHelpCenter",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "displayhelpcenter"
+      },
+      {
+        "name": "displayArticle",
+        "signature": "(article: IntercomArticle) => Promise<void>",
+        "parameters": [
+          {
+            "name": "article",
+            "docs": "",
+            "type": "IntercomArticle"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "IntercomArticle"
+        ],
+        "slug": "displayarticle"
+      },
+      {
+        "name": "hideMessenger",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "hidemessenger"
+      },
+      {
+        "name": "displayLauncher",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "displaylauncher"
+      },
+      {
+        "name": "hideLauncher",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "hidelauncher"
+      },
+      {
+        "name": "setCustomAttributes",
+        "signature": "(payload: IntercomCustomAttributes) => Promise<void>",
+        "parameters": [
+          {
+            "name": "payload",
+            "docs": "",
+            "type": "IntercomCustomAttributes"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "IntercomCustomAttributes"
+        ],
+        "slug": "setcustomattributes"
+      },
+      {
+        "name": "displaySurvey",
+        "signature": "(survey: IntercomSurvey) => Promise<void>",
+        "parameters": [
+          {
+            "name": "survey",
+            "docs": "",
+            "type": "IntercomSurvey"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "IntercomSurvey"
+        ],
+        "slug": "displaysurvey"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "IntercomSettings",
+      "slug": "intercomsettings",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "app_id",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "api_base",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "alignment",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "custom_launcher_selector",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "hide_default_launcher",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "horizontal_padding",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "session_duration",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "vertical_padding",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "action_color",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "background_color",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "email",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "phone",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "created_at",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "name",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "user_id",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "user_hash",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "unsubscribed_from_emails",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "language_override",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "utm_campaign",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "utm_content",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "utm_medium",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "utm_source",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "utm_term",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "company",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "IntercomCompany"
+          ],
+          "type": "IntercomCompany | undefined"
+        },
+        {
+          "name": "companies",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "IntercomCompany"
+          ],
+          "type": "IntercomCompany[] | undefined"
+        },
+        {
+          "name": "avatar",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "IntercomAvatar"
+          ],
+          "type": "IntercomAvatar | undefined"
+        }
+      ]
+    },
+    {
+      "name": "IntercomCompany",
+      "slug": "intercomcompany",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "name",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | number | undefined"
+        },
+        {
+          "name": "company_id",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | number | undefined"
+        },
+        {
+          "name": "created_at",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "remote_created_at",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "plan",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "monthly_spend",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "user_count",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "size",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "website",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "industry",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "IntercomAvatar",
+      "slug": "intercomavatar",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "type",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "'avatar'"
+        },
+        {
+          "name": "image_url",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "IntercomIdentity",
+      "slug": "intercomidentity",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "userId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "email",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "userHash",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "IntercomUser",
+      "slug": "intercomuser",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "email",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "phone",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "name",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "language",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "IntercomEvent",
+      "slug": "intercomevent",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "name",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "data",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "any"
+        }
+      ]
+    },
+    {
+      "name": "IntercomMessage",
+      "slug": "intercommessage",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "content",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "IntercomArticle",
+      "slug": "intercomarticle",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "id",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "IntercomCustomAttributes",
+      "slug": "intercomcustomattributes",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "attributes",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "Record"
+          ],
+          "type": "Record<string, number | string | boolean>"
+        }
+      ]
+    },
+    {
+      "name": "IntercomSurvey",
+      "slug": "intercomsurvey",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "id",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [
+    {
+      "name": "Record",
+      "slug": "record",
+      "docs": "Construct a type with a set of properties K of type T",
+      "types": [
+        {
+          "text": "{\r\n    [P in K]: T;\r\n}",
+          "complexTypes": [
+            "K",
+            "T"
+          ]
+        }
+      ]
+    }
+  ],
+  "pluginConfigs": []
+}
